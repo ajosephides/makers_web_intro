@@ -16,6 +16,7 @@ get '/welcome' do
   "please put your feet up"
 end
 
-get '/cat' do  
+get '/cat' do
+  @name_selector = ["Amigo", "Oscar", "Viking"].sample  
   erb(:index)
 end
