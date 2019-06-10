@@ -16,7 +16,12 @@ get '/welcome' do
   "please put your feet up"
 end
 
-get '/cat' do
-  @name_selector = ["Amigo", "Oscar", "Viking"].sample  
+get '/random-cat' do
+  @name = ["Amigo", "Oscar", "Viking"].sample  
+  erb(:index)
+end
+
+get '/named-cat' do
+  @name = params[:name] 
   erb(:index)
 end
