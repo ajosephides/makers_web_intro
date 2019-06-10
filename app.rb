@@ -15,3 +15,9 @@ end
 get '/welcome' do
   "please put your feet up"
 end
+
+get '/cat' do  
+  "<div>
+    <img src='http://bit.ly/1eze8aE' style='border: 6px dotted red'>
+  </div>"
+end
